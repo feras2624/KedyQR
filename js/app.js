@@ -13,8 +13,10 @@ async function init() {
         const menu = await loadMenu(cafe);
 
         setMenu(menu);
-
+        document.documentElement.dataset.mode =
+            menu.theme.palette ?? "light";
         const theme = await loadTheme(menu.theme.template);
+
 
         theme.render();
 

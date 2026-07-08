@@ -12,7 +12,8 @@
   },
 
   "theme": {
-    "template": "modern"
+    "template": "modern",
+    "palette": "dark"
   },
 
   "categories": [
