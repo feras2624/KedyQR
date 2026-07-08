@@ -1,0 +1,87 @@
+{
+    "version": 1,
+
+    "info": {
+        "name": "Demo Cafe",
+        "description": "Fresh Coffee & Desserts",
+        "address":"Batman /merkez",
+        "phone":"0 530 000 000 00",
+        "instagram":"#",
+        "logo": "assets/logo.png",
+        "cover": "assets/cover.jpg"
+    },
+
+    "theme": {
+        "template": "modern"
+    },
+
+    "categories": [
+        {
+            "id": "coffee",
+            "name": "Coffee"
+        },
+        {
+            "id": "desserts",
+            "name": "Desserts"
+        }
+    ],
+
+    "items": [
+        {
+            "id": "latte",
+            "category": "coffee",
+            "name": "Latte",
+            "description": "Espresso with steamed milk.",
+            "price": 180,
+            "image": "assets/items/latte.jpg"
+        },
+                {
+            "id": "latte",
+            "category": "coffee",
+            "name": "Latte",
+            "description": "Espresso with steamed milk.",
+            "price": 180,
+            "image": "assets/items/latte.jpg"
+        },
+                {
+            "id": "latte",
+            "category": "coffee",
+            "name": "Latte",
+            "description": "Espresso with steamed milk.",
+            "price": 180,
+            "image": "assets/items/latte.jpg"
+        },
+                {
+            "id": "latte",
+            "category": "coffee",
+            "name": "Latte",
+            "description": "Espresso with steamed milk.",
+            "price": 180,
+            "image": "assets/items/latte.jpg"
+        },
+                {
+            "id": "latte",
+            "category": "coffee",
+            "name": "Latte",
+            "description": "Espresso with steamed milk.",
+            "price": 180,
+            "image": "assets/items/latte.jpg"
+        },
+        {
+            "id": "espresso",
+            "category": "coffee",
+            "name": "Espresso",
+            "description": "Classic espresso shot.",
+            "price": 120,
+            "image": "assets/items/espresso.jpg"
+        },
+        {
+            "id": "cheesecake",
+            "category": "desserts",
+            "name": "Cheesecake",
+            "description": "Homemade cheesecake.",
+            "price": 220,
+            "image": "assets/items/cheesecake.jpg"
+        }
+    ]
+}
