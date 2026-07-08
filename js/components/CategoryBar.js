@@ -1,6 +1,6 @@
 import { getMenu } from "../state.js";
 
-export function CategoryBar(){
+export function CategoryBar() {
 
     const menu = getMenu();
 
@@ -8,21 +8,35 @@ export function CategoryBar(){
 
     nav.className = "categories";
 
-    for(const category of menu.categories){
+    for (const category of menu.categories) {
 
         const button = document.createElement("button");
 
+        button.className = "category-btn";
+
+        button.id = `btn-${category.id}`;
+
         button.textContent = category.name;
 
-        button.onclick = ()=>{
+        button.onclick = () => {
 
-            document
-                .getElementById(category.id)
-                ?.scrollIntoView({
+            const element = document.getElementById(category.id);
 
-                    behavior:"smooth"
+            if (!element)
+                return;
 
-                });
+            const y =
+                element.getBoundingClientRect().top +
+                window.scrollY -
+                75;
+
+            window.scrollTo({
+
+                top: y,
+
+                behavior: "smooth"
+
+            });
 
         };
 

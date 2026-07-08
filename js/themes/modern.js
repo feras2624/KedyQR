@@ -2,7 +2,7 @@ import { Hero } from "../components/Hero.js";
 import { CategoryBar } from "../components/CategoryBar.js";
 import { MenuList } from "../components/MenuList.js";
 import { Footer } from "../components/Footer.js";
-
+import { observeCategories } from "../utils/observer.js";
 export function render(){
 
     const app = document.getElementById("app");
@@ -18,5 +18,7 @@ export function render(){
         Footer()
 
     );
+
+        observeCategories();
 
 }

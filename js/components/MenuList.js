@@ -15,6 +15,7 @@ export function MenuList(){
         const title = document.createElement("h2");
 
         title.id = category.id;
+        title.className= "cat-title";
 
         title.textContent = category.name;
 
