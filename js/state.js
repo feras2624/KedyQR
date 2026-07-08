@@ -20,5 +20,5 @@ export function getMenu() {
 }
 
 export function asset(path) {
-    return `/cafes/${state.cafe}/${path}`;
+    return `cafes/${state.cafe}/${path}`;
 }
