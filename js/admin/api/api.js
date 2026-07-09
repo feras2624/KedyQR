@@ -1,4 +1,4 @@
-const API = "http://127.0.0.1:8787";
+const API = "https://kedyqr-wr.p0038300.workers.dev";
 
 export async function api(path, options = {}) {
 
