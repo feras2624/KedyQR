@@ -151,13 +151,17 @@ function showAddModal(){
 
     );
 
-    const image = Input(
+const image = ImagePicker(
 
-        "Image",
+    item.image,
 
-        "assets/items/placeholder.jpg"
+    value => {
 
-    );
+        item.image = value;
+
+    }
+
+);
 
     const body = document.createElement("div");
 
@@ -270,7 +274,7 @@ function showEditModal(item){
 
 const image = ImagePicker(
 
-    asset(item.image),
+    item.image,
 
     value => {
 
@@ -292,7 +296,7 @@ const image = ImagePicker(
 
         category.element,
 
-        image
+        image.element
 
     );
 

@@ -11,8 +11,8 @@ export function ImagePicker(image, onChange) {
 
     const preview = document.createElement("img");
 
-    preview.src = image;
-
+    preview.src = asset(image);
+    let currentPath = image;
     preview.className = "image-preview";
 
 
@@ -56,8 +56,8 @@ export function ImagePicker(image, onChange) {
 
             const result = await uploadImage(file);
 
-            preview.src = asset(result.path);
-
+            preview.src = URL.createObjectURL(file);
+            currentPath=result.path;
             onChange(result.path);
 
             markDirty();
@@ -87,7 +87,16 @@ export function ImagePicker(image, onChange) {
     );
 
 
+return {
 
-    return container;
+    element: container,
+
+    get value() {
+
+        return currentPath;
+
+    }
+
+};
 
 }
