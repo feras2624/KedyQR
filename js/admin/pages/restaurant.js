@@ -28,7 +28,7 @@ export function Restaurant(){
 
             }
 
-        ),
+        ).element,
 
         Textarea(
 
@@ -60,7 +60,7 @@ export function Restaurant(){
 
             }
 
-        ),
+        ).element,
 
         Input(
 
@@ -76,7 +76,7 @@ export function Restaurant(){
 
             }
 
-        ),
+        ).element,
 
         Input(
 
@@ -92,7 +92,7 @@ export function Restaurant(){
 
             }
 
-        )
+        ).element
 
     );
 

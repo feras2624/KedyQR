@@ -22,6 +22,10 @@
       "name": "Sıcak Kahveler"
     },
     {
+      "id": "cat-test-coffee",
+      "name": "TEST Kahveler"
+    },
+    {
       "id": "cat-cold-coffee",
       "name": "Soğuk Kahveler"
     },

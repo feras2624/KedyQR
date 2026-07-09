@@ -1,3 +1,7 @@
+import { markDirty } from "../state.js";
+
+
+
 export function Textarea(label, value, onInput){
 
     const div = document.createElement("div");
@@ -14,8 +18,14 @@ export function Textarea(label, value, onInput){
 
     textarea.value = value ?? "";
 
-    textarea.oninput = e => onInput(e.target.value);
-
+    textarea.oninput = e => {
+    
+        onInput(e.target.value);
+    
+        markDirty();
+    
+    };
+    
     div.append(
 
         lbl,

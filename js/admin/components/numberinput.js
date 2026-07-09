@@ -1,24 +1,24 @@
 import { markDirty } from "../state.js";
 
-export function Input(label, value = "", onInput = () => {}) {
+export function NumberInput(label, value = 0, onInput = () => {}) {
 
     const wrapper = document.createElement("div");
-
     wrapper.className = "form-group";
 
     const lbl = document.createElement("label");
-
     lbl.textContent = label;
 
     const input = document.createElement("input");
 
-    input.type = "text";
+    input.type = "number";
+    input.min = "0";
+    input.step = "1";
 
     input.value = value;
 
     input.oninput = e => {
 
-        onInput(e.target.value);
+        onInput(Number(e.target.value));
 
         markDirty();
 
@@ -34,7 +34,7 @@ export function Input(label, value = "", onInput = () => {}) {
         element: wrapper,
 
         get value() {
-            return input.value.trim();
+            return Number(input.value);
         },
 
         set value(v) {
