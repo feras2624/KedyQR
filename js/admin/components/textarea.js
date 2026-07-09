@@ -2,7 +2,7 @@ import { markDirty } from "../state.js";
 
 
 
-export function Textarea(label, value, onInput){
+export function Textarea(label, value,  onInput = () => {}){
 
     const div = document.createElement("div");
 
@@ -34,6 +34,22 @@ export function Textarea(label, value, onInput){
 
     );
 
-    return div;
+    return {
+
+        element: div,
+
+        get value() {
+            return textarea.value.trim();
+        },
+
+        set value(v) {
+            textarea.value = v;
+        },
+
+        focus() {
+            textarea.focus();
+        }
+
+    };
 
 }

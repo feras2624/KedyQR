@@ -44,7 +44,7 @@ export function Restaurant(){
 
             }
 
-        ),
+        ).element,
 
         Input(
 

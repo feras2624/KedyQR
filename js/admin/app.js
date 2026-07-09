@@ -9,6 +9,16 @@ import { Themes } from "./pages/themes.js";
 import { state,clearDirty } from "./state.js";
 import { navigate,getCafeName } from "./router.js";
 import { loadMenu } from "../api.js";
+import { saveMenu } from "./api/menu.js";
+const token = localStorage.getItem("token");
+
+if (!token) {
+
+    location.href = "login.html";
+
+    throw new Error("Not logged in");
+
+}
 
 const pages = {
 
@@ -36,12 +46,24 @@ export function renderPage() {
 
 }
 
-export function save(){
+export async function save() {
 
-    console.log(
-        JSON.stringify(state.menu, null, 4)
-    );
-    clearDirty();
+    try {
+
+        await saveMenu(state.menu);
+
+        clearDirty();
+
+        alert("Saved successfully");
+
+    }
+
+    catch (err) {
+
+        alert(err.message);
+
+    }
+
 }
 
 

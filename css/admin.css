@@ -666,3 +666,238 @@ button:hover {
     height:18px;
 
 }
+
+
+
+/* ==========================================================
+   Items
+   ========================================================== */
+
+.item-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.item-row{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+    background:white;
+
+    padding:18px;
+
+    border-radius:14px;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+
+    transition:.2s;
+
+}
+
+.item-row:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+
+}
+
+.item-image{
+
+    width:90px;
+
+    height:90px;
+
+    border-radius:12px;
+
+    object-fit:cover;
+
+    flex-shrink:0;
+
+    background:#f5f5f5;
+
+    border:1px solid #eee;
+
+}
+
+.item-info{
+
+    flex:1;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:6px;
+
+    min-width:0;
+
+}
+
+.item-info h3{
+
+    margin:0;
+
+    font-size:20px;
+
+}
+
+.item-category{
+
+    display:inline-block;
+
+    width:max-content;
+
+    padding:4px 10px;
+
+    border-radius:999px;
+
+    background:#f1f1f1;
+
+    color:#555;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+.item-info p{
+
+    margin:0;
+
+    color:#666;
+
+    display:-webkit-box;
+
+    -webkit-line-clamp:2;
+
+    -webkit-box-orient:vertical;
+
+    overflow:hidden;
+
+}
+
+.item-info strong{
+
+    margin-top:4px;
+
+    font-size:20px;
+
+    color:#c97900;
+
+}
+
+.item-actions{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+
+}
+
+.item-actions button{
+
+    width:42px;
+
+    height:42px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#f5f5f5;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+}
+
+.item-actions button:hover{
+
+    background:#e8e8e8;
+
+}
+
+/* ==========================================================
+   Mobile
+   ========================================================== */
+
+@media(max-width:768px){
+
+    .item-row{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+    }
+
+    .item-image{
+
+        width:100%;
+
+        height:180px;
+
+    }
+
+    .item-actions{
+
+        width:100%;
+
+        flex-direction:row;
+
+        justify-content:flex-end;
+
+    }
+
+}
+
+
+.image-picker{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+}
+
+.image-preview{
+
+    width:180px;
+
+    height:180px;
+
+    object-fit:cover;
+
+    border-radius:12px;
+
+    border:2px dashed #ccc;
+
+    cursor:pointer;
+
+    background:#f5f5f5;
+
+}
+
+.image-preview:hover{
+
+    opacity:.9;
+
+}

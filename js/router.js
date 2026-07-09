@@ -11,7 +11,7 @@ export function getCafeName() {
         host === "localhost" ||
         host === "127.0.0.1"
     )
-        return "demo";
+        return "demotastfas";
 
     return host.split(".")[0];
 
