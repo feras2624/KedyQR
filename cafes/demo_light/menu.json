@@ -49,6 +49,10 @@
     {
       "id": "cat-drinks",
       "name": "Soğuk İçecekler"
+    },
+    {
+      "id": "b61c9ffc-3283-4fc4-b8ae-3c52c0c4c217",
+      "name": "Waffle"
     }
   ],
   "items": [
@@ -267,6 +271,14 @@
       "description": "500 ml doğal kaynak suyu.",
       "price": 25,
       "image": "assets/items/placeholder.jpg"
+    },
+    {
+      "id": "e9d07551-8400-4361-8cf3-cac80f2cda04",
+      "category": "b61c9ffc-3283-4fc4-b8ae-3c52c0c4c217",
+      "name": "Klâsik waffle",
+      "description": "Sütlü veya bitter çikolata tabanı üzerine muz, çilek, kivi gibi meyveler ve fındık/antep fıstığı eklenir.",
+      "price": 250,
+      "image": "assets/items/cad4ff95-e8f8-44e5-a205-fdfddc0764f5.png"
     }
   ]
 }
