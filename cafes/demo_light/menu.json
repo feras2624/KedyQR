@@ -198,7 +198,7 @@
       "name": "Tavuklu Alfredo",
       "description": "Kremalı sos ve tavuk ile hazırlanır.",
       "price": 420,
-      "image": "assets/items/placeholder.jpg"
+      "image": "assets/items/d4b68408-f283-4415-93c3-0b56bb56a660.jpeg"
     },
     {
       "id": "item-bolognese",
@@ -206,7 +206,7 @@
       "name": "Bolonez Makarna",
       "description": "Kıymalı domates sosu ile servis edilir.",
       "price": 390,
-      "image": "assets/items/placeholder.jpg"
+      "image": "assets/items/a2874446-420c-40f9-9a96-9dd203094d88.jpeg"
     },
     {
       "id": "item-hamburger",
@@ -214,7 +214,7 @@
       "name": "Hamburger",
       "description": "Izgara köfte, marul, domates ve patates kızartması.",
       "price": 450,
-      "image": "assets/items/placeholder.jpg"
+      "image": "assets/items/5c767307-0a74-47ad-bd61-2d4134f5a37b.jpeg"
     },
     {
       "id": "item-cheeseburger",
@@ -222,7 +222,7 @@
       "name": "Cheeseburger",
       "description": "Cheddar peyniri ile hazırlanır.",
       "price": 480,
-      "image": "assets/items/placeholder.jpg"
+      "image": "assets/items/2ca59689-1504-45ac-831e-9ceae2493249.jpeg"
     },
     {
       "id": "item-cheesecake",
@@ -230,7 +230,7 @@
       "name": "Cheesecake",
       "description": "Frambuaz soslu cheesecake.",
       "price": 220,
-      "image": "assets/items/placeholder.jpg"
+      "image": "assets/items/189c2840-03e6-4e2a-b84d-3e4e80e3fc94.jpeg"
     },
     {
       "id": "item-brownie",
@@ -238,7 +238,7 @@
       "name": "Brownie",
       "description": "Sıcak çikolatalı brownie.",
       "price": 210,
-      "image": "assets/items/placeholder.jpg"
+      "image": "assets/items/d50f7f22-880a-4cfd-8fd4-7ff201241eab.jpeg"
     },
     {
       "id": "item-san-sebastian",
@@ -251,10 +251,10 @@
     {
       "id": "item-kola",
       "category": "cat-drinks",
-      "name": "Kola",
+      "name": "Coca cola",
       "description": "330 ml.",
       "price": 90,
-      "image": "assets/items/placeholder.jpg"
+      "image": "assets/items/d4abe33f-62e7-478b-9d51-ba879b05dcaf.jpeg"
     },
     {
       "id": "item-portakal",
@@ -262,7 +262,7 @@
       "name": "Taze Sıkma Portakal Suyu",
       "description": "Günlük taze portakallardan hazırlanır.",
       "price": 160,
-      "image": "assets/items/placeholder.jpg"
+      "image": "assets/items/e17bbdff-d7e8-4512-a238-1de5cf3b7eb7.jpeg"
     },
     {
       "id": "item-su",
