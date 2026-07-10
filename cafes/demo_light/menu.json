@@ -10,8 +10,8 @@
     "cover": "assets/cover.jpg"
   },
   "theme": {
-    "template": "minimal",
-    "palette": "dark"
+    "template": "bistro",
+    "palette": "light"
   },
   "categories": [
     {
@@ -62,7 +62,7 @@
       "name": "Türk Kahvesi",
       "description": "Geleneksel yöntemle hazırlanan bol köpüklü Türk kahvesi.",
       "price": 90,
-      "image": "assets/items/8547b813-8d9a-439f-8e99-26e5f2596fd8.jpg"
+      "image": "assets/items/placeholder.jpg"
     },
     {
       "id": "item-espresso",
@@ -251,7 +251,7 @@
     {
       "id": "item-kola",
       "category": "cat-drinks",
-      "name": "Coca cola",
+      "name": "Kola",
       "description": "330 ml.",
       "price": 90,
       "image": "assets/items/placeholder.jpg"
@@ -270,7 +270,7 @@
       "name": "Su",
       "description": "500 ml doğal kaynak suyu.",
       "price": 25,
-      "image": "assets/items/placeholder.jpg"
+      "image": "assets/items/3f5b9012-2ce7-456d-93a8-ceb2138016a2.webp"
     },
     {
       "id": "e9d07551-8400-4361-8cf3-cac80f2cda04",
