@@ -1,6 +1,5 @@
 {
   "version": 1,
-
   "info": {
     "name": "Demo Cafe",
     "description": "Kahve • Kahvaltı • Tatlı",
@@ -10,12 +9,10 @@
     "logo": "assets/logo.png",
     "cover": "assets/cover.jpg"
   },
-
   "theme": {
-    "template": "bistro",
-    "palette": "dark"
+    "template": "modern",
+    "palette": "light"
   },
-
   "categories": [
     {
       "id": "cat-hot-coffee",
@@ -54,7 +51,6 @@
       "name": "Soğuk İçecekler"
     }
   ],
-
   "items": [
     {
       "id": "item-turk-kahvesi",
@@ -112,7 +108,6 @@
       "price": 195,
       "image": "assets/items/placeholder.jpg"
     },
-
     {
       "id": "item-iced-americano",
       "category": "cat-cold-coffee",
@@ -137,7 +132,6 @@
       "price": 210,
       "image": "assets/items/placeholder.jpg"
     },
-
     {
       "id": "item-cay",
       "category": "cat-tea",
@@ -162,7 +156,6 @@
       "price": 80,
       "image": "assets/items/placeholder.jpg"
     },
-
     {
       "id": "item-serpme",
       "category": "cat-breakfast",
@@ -179,7 +172,6 @@
       "price": 210,
       "image": "assets/items/placeholder.jpg"
     },
-
     {
       "id": "item-karisik-tost",
       "category": "cat-toast",
@@ -196,7 +188,6 @@
       "price": 320,
       "image": "assets/items/placeholder.jpg"
     },
-
     {
       "id": "item-alfredo",
       "category": "cat-pasta",
@@ -213,7 +204,6 @@
       "price": 390,
       "image": "assets/items/placeholder.jpg"
     },
-
     {
       "id": "item-hamburger",
       "category": "cat-burger",
@@ -230,7 +220,6 @@
       "price": 480,
       "image": "assets/items/placeholder.jpg"
     },
-
     {
       "id": "item-cheesecake",
       "category": "cat-dessert",
@@ -255,7 +244,6 @@
       "price": 260,
       "image": "assets/items/placeholder.jpg"
     },
-
     {
       "id": "item-kola",
       "category": "cat-drinks",
