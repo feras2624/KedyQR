@@ -28,7 +28,7 @@ export function CategoryBar() {
             const y =
                 section.getBoundingClientRect().top +
                 window.scrollY -
-                80;
+                100;
 
             window.scrollTo({
 
