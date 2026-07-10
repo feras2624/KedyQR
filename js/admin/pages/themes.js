@@ -46,6 +46,27 @@ const THEMES = [
         ]
 
     },
+    {
+
+        value: "bistro",
+
+        label: "Bistro",
+
+        palettes: [
+
+            {
+                value: "light",
+                label: "Light"
+            },
+
+            {
+                value: "dark",
+                label: "Dark"
+            }
+
+        ]
+
+    },
 
     {
 
