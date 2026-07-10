@@ -279,6 +279,14 @@
       "description": "Sütlü veya bitter çikolata tabanı üzerine muz, çilek, kivi gibi meyveler ve fındık/antep fıstığı eklenir.",
       "price": 250,
       "image": "assets/items/cad4ff95-e8f8-44e5-a205-fdfddc0764f5.png"
+    },
+    {
+      "id": "4b10f5fa-fcdf-42bb-bf9d-3ac1412700c2",
+      "category": "b61c9ffc-3283-4fc4-b8ae-3c52c0c4c217",
+      "name": "Lotus waffle",
+      "description": "Taban çikolatasına ek olarak Lotus bisküvi sosu ve ufalanmış bisküvi parçacıkları ile hazırlanır.",
+      "price": 300,
+      "image": "assets/items/935269d8-52a7-463d-a75e-ec30d8589fb6.jpg"
     }
   ]
 }
