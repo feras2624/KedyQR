@@ -37,10 +37,6 @@ const THEMES = [
                 value: "light",
                 label: "Light"
             },
-            {
-                value: "test",
-                label: "test"
-            },
 
             {
                 value: "dark",
