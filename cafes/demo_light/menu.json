@@ -287,6 +287,14 @@
       "description": "Taban çikolatasına ek olarak Lotus bisküvi sosu ve ufalanmış bisküvi parçacıkları ile hazırlanır.",
       "price": 300,
       "image": "assets/items/935269d8-52a7-463d-a75e-ec30d8589fb6.jpg"
+    },
+    {
+      "id": "a5bae0e4-cd05-4700-9e01-de8bf5e2e0d8",
+      "category": "b61c9ffc-3283-4fc4-b8ae-3c52c0c4c217",
+      "name": "Kova waffle",
+      "description": "küp doğranmış waffle hamuru, çikolata çeşitleri, taze meyveler ve çeşitli çıtır atıştırmalıkların bir kovada kat kat birleştirilmesiyle hazırlanan zengin bir tatlıdır.",
+      "price": 300,
+      "image": "assets/items/24c457fe-28d2-43a0-a14b-2bd14715c4e6.jpg"
     }
   ]
 }
