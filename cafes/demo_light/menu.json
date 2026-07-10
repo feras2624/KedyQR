@@ -10,8 +10,8 @@
     "cover": "assets/cover.jpg"
   },
   "theme": {
-    "template": "modern",
-    "palette": "light"
+    "template": "bistro",
+    "palette": "dark"
   },
   "categories": [
     {
