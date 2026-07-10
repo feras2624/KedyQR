@@ -12,7 +12,7 @@
   },
 
   "theme": {
-    "template": "modern",
+    "template": "classic",
     "palette": "light"
   },
 
@@ -20,10 +20,6 @@
     {
       "id": "cat-hot-coffee",
       "name": "Sıcak Kahveler"
-    },
-    {
-      "id": "cat-test-coffee",
-      "name": "TEST Kahveler"
     },
     {
       "id": "cat-cold-coffee",

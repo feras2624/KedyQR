@@ -153,13 +153,7 @@ function showAddModal(){
 
 const image = ImagePicker(
 
-    item.image,
-
-    value => {
-
-        item.image = value;
-
-    }
+    ""
 
 );
 
@@ -205,8 +199,21 @@ const image = ImagePicker(
 
                 onClick(){
 
-                    if(!name.value)
+                    const fields = body.querySelectorAll("input, textarea, select");
+
+                    for (const field of fields) {
+                        if (!field.reportValidity()) {
+                            return;
+                        }
+                    }
+                    if (!image.value) {
+
+                        alert("Please choose an image.");
+
                         return;
+
+                    }
+                    
 
                     state.menu.items.push({
 
@@ -326,6 +333,20 @@ const image = ImagePicker(
 
                 onClick(){
 
+                    const fields = body.querySelectorAll("input, textarea, select");
+
+                    for (const field of fields) {
+                        if (!field.reportValidity()) {
+                            return;
+                        }
+                    }
+                    if (!image.value) {
+
+                        alert("Please choose an image.");
+
+                        return;
+
+                    }
                     item.name = name.value;
 
                     item.description = description.value;

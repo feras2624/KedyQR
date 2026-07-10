@@ -174,8 +174,9 @@ function showAddModal() {
 
                 onClick() {
 
-                    if (!input.value)
-                        return;
+                        if (!input.reportValidity()) {
+                            return;
+                        }
 
                     state.menu.categories.push({
 
@@ -229,8 +230,10 @@ function showEditModal(category) {
 
                 onClick() {
 
-                    if (!input.value)
-                        return;
+                        if (!input.reportValidity()) {
+                            return;
+                        }
+                    
 
                     category.name = input.value;
 

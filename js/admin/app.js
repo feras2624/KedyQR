@@ -51,7 +51,7 @@ export async function save() {
     try {
 
         await saveMenu(state.menu);
-
+        //console.log(JSON.stringify(state.menu));
         clearDirty();
 
         alert("Saved successfully");

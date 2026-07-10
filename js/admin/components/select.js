@@ -22,7 +22,7 @@ export function Select(label, options = [], value = "", onChange = () => {}) {
     });
 
     select.value = value;
-
+    select.required=true;
     select.onchange = e => {
 
         onChange(e.target.value);

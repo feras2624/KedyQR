@@ -58,7 +58,7 @@ export function ImagePicker(image, onChange) {
 
             preview.src = URL.createObjectURL(file);
             currentPath=result.path;
-            onChange(result.path);
+            onChange?.(result.path);
 
             markDirty();
 

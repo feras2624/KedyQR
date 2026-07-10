@@ -15,6 +15,7 @@ export function Input(label, value = "", onInput = () => {}) {
     input.type = "text";
 
     input.value = value;
+    input.required=true;
 
     input.oninput = e => {
 
@@ -43,6 +44,9 @@ export function Input(label, value = "", onInput = () => {}) {
 
         focus() {
             input.focus();
+        },
+        reportValidity() {
+            return input.reportValidity();
         }
 
     };

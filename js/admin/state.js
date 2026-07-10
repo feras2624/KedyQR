@@ -31,5 +31,5 @@ export function clearDirty() {
 }
 
 export function asset(path) {
-    return `cafes/${state.cafe}/${path}`;
+    return `cafes/${state.cafe}/${path}?v=${Date.now()}`;
 }

@@ -11,9 +11,9 @@ export function NumberInput(label, value = 0, onInput = () => {}) {
     const input = document.createElement("input");
 
     input.type = "number";
-    input.min = "0";
+    input.min = "1";
     input.step = "1";
-
+    input.required=true;
     input.value = value;
 
     input.oninput = e => {

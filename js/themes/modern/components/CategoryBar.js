@@ -1,4 +1,4 @@
-import { getMenu } from "../state.js";
+import { getMenu } from "../../../state.js";
 
 export function CategoryBar() {
 
@@ -13,7 +13,7 @@ export function CategoryBar() {
         const button = document.createElement("button");
 
         button.className = "category-btn";
-
+        //button.dataset.category = category.id;
         button.id = `btn-${category.id}`;
 
         button.textContent = category.name;

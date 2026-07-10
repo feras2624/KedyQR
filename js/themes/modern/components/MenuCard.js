@@ -1,4 +1,4 @@
-import { asset } from "../state.js";
+import { asset } from "../../../state.js";
 
 export function MenuCard(item){
 

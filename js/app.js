@@ -35,12 +35,13 @@ async function loadTheme(name) {
 
     css.rel = "stylesheet";
 
-    css.href = `./css/${name}.css`;
+    css.href = `./js/themes/${name}/style.css`;
 
     document.head.append(css);
-
+    //console.log(import(`./themes/${name}/${name}.js`));
     // Load JS module
-    return await import(`./themes/${name}.js`);
+    return await import(`./themes/${name}/${name}.js`);
+   
 
 }
 

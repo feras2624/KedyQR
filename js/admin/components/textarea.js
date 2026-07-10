@@ -15,6 +15,7 @@ export function Textarea(label, value,  onInput = () => {}){
     const textarea = document.createElement("textarea");
 
     textarea.rows = 4;
+    textarea.required=true;
 
     textarea.value = value ?? "";
 

@@ -1,4 +1,4 @@
-import { getMenu } from "../state.js";
+import { getMenu } from "../../../state.js";
 
 export function Footer() {
 

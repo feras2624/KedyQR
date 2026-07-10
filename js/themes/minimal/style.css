@@ -1,0 +1,336 @@
+/* ==========================================================
+   Color Palettes
+   ========================================================== */
+
+:root[data-mode="light"]{
+
+    --background:#f6f7f9;
+    --surface:#ffffff;
+
+    --text:#1f2937;
+    --muted:#6b7280;
+
+    --primary:#2563eb;
+
+    --border:#e5e7eb;
+
+}
+
+:root[data-mode="dark"]{
+
+    --background:#111827;
+    --surface:#1f2937;
+
+    --text:#f3f4f6;
+    --muted:#9ca3af;
+
+    --primary:#60a5fa;
+
+    --border:#374151;
+
+}
+
+
+/* ==========================================================
+   Base
+   ========================================================== */
+
+body{
+
+    margin:0;
+
+    background:var(--background);
+
+    color:var(--text);
+
+    font-family:system-ui,sans-serif;
+
+}
+
+
+/* ==========================================================
+   Header
+   ========================================================== */
+
+.header{
+
+    max-width:700px;
+
+    margin:3rem auto 2rem;
+
+    padding:0 1rem;
+
+    text-align:center;
+
+}
+
+.logo{
+
+    width:90px;
+
+    height:90px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:3px solid var(--surface);
+
+    box-shadow:0 4px 20px rgba(0,0,0,.15);
+
+}
+
+.header h1{
+
+    margin:1rem 0 .4rem;
+
+    font-size:2rem;
+
+}
+
+.header .description{
+
+    color:var(--muted);
+
+}
+
+
+/* ==========================================================
+   Categories
+   ========================================================== */
+
+.category-bar{
+
+    position:sticky;
+
+    top:0;
+
+    z-index:100;
+
+    display:flex;
+
+    gap:.75rem;
+
+    overflow-x:auto;
+
+    padding:1rem;
+
+    background:var(--background);
+
+    border-bottom:1px solid var(--border);
+
+}
+
+.category-bar::-webkit-scrollbar{
+
+    display:none;
+
+}
+
+.category-btn{
+
+    flex:none;
+
+    padding:.7rem 1.2rem;
+
+    border:none;
+
+    border-radius:999px;
+
+    background:var(--surface);
+
+    color:var(--text);
+
+    cursor:pointer;
+
+    transition:.2s;
+
+}
+
+.category-btn:hover{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+.category-btn.active{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+
+/* ==========================================================
+   Menu
+   ========================================================== */
+
+.menu{
+
+    max-width:700px;
+
+    margin:auto;
+
+    padding:2rem 1rem;
+
+}
+
+.category-section{
+
+    margin-bottom:3rem;
+
+}
+
+.category-section h2{
+
+    margin-bottom:1rem;
+
+    padding-bottom:.5rem;
+
+    border-bottom:2px solid var(--primary);
+
+}
+
+
+/* ==========================================================
+   Item
+   ========================================================== */
+
+.menu-item{
+
+    display:flex;
+
+    gap:1rem;
+
+    padding:1rem 0;
+
+    border-bottom:1px solid var(--border);
+
+}
+
+.item-image{
+
+    width:90px;
+
+    height:90px;
+
+    object-fit:cover;
+
+    border-radius:12px;
+
+    flex-shrink:0;
+
+}
+
+.item-content{
+
+    flex:1;
+
+}
+
+.item-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:1rem;
+
+}
+
+.item-header h3{
+
+    margin:0;
+
+    font-size:1.05rem;
+
+}
+
+.price{
+
+    color:var(--primary);
+
+    font-weight:bold;
+
+    white-space:nowrap;
+
+}
+
+.item-content p{
+
+    margin:.5rem 0 0;
+
+    color:var(--muted);
+
+    line-height:1.5;
+
+}
+
+
+/* ==========================================================
+   Footer
+   ========================================================== */
+
+.footer{
+
+    max-width:700px;
+
+    margin:4rem auto;
+
+    padding:2rem 1rem;
+
+    border-top:1px solid var(--border);
+
+    text-align:center;
+
+    color:var(--muted);
+
+}
+
+.footer p{
+
+    margin:.4rem 0;
+
+}
+
+.footer a{
+
+    color:var(--primary);
+
+    text-decoration:none;
+
+}
+
+.footer a:hover{
+
+    text-decoration:underline;
+
+}
+
+
+/* ==========================================================
+   Mobile
+   ========================================================== */
+
+@media (max-width:600px){
+
+    .menu-item{
+
+        flex-direction:column;
+
+    }
+
+    .item-image{
+
+        width:100%;
+
+        height:180px;
+
+    }
+
+}

@@ -1,4 +1,4 @@
-import { getMenu, asset } from "../state.js";
+import { getMenu, asset } from "../../../state.js";
 
 export function Hero(){
 
