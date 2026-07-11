@@ -130,7 +130,7 @@ export function ImagePicker(image, onChange) {
 
             const result = await uploadImage(optimized);
 
-            preview.src = URL.createObjectURL(file);
+            preview.src = URL.createObjectURL(optimized);
             currentPath=result.path;
             onChange?.(result.path);
 
