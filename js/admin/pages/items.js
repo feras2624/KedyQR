@@ -355,8 +355,8 @@ const image = ImagePicker(
 
                     item.category = category.value;
 
-                    //item.image = image.value;
-
+                    item.image = image.value;
+                    console.log(JSON.stringify(state.menu,null,2));
                     markDirty();
 
                     closeModal();
