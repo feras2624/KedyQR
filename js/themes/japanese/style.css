@@ -1,0 +1,373 @@
+:root[data-mode="light"]{
+
+    --bg:#f7f5f2;
+    --surface:#ffffff;
+
+    --primary:#b22222;
+
+    --text:#222;
+    --muted:#777;
+
+    --border:#e5e2dc;
+
+}
+
+:root[data-mode="dark"]{
+
+    --bg:#121212;
+    --surface:#1b1b1b;
+
+    --primary:#d34a4a;
+
+    --text:#f2f2f2;
+    --muted:#aaaaaa;
+
+    --border:#303030;
+
+}
+
+*{
+
+    box-sizing:border-box;
+
+}
+
+body{
+
+    margin:0;
+
+    background:var(--bg);
+
+    color:var(--text);
+
+    font-family:
+        "Noto Serif JP",
+        "Yu Mincho",
+        Georgia,
+        serif;
+
+}
+
+/* HEADER */
+
+.header{
+
+    text-align:center;
+
+    padding:3rem 1rem 2rem;
+
+}
+
+.logo{
+
+    width:90px;
+
+    height:90px;
+
+    object-fit:contain;
+
+    border-radius:50%;
+
+}
+
+.header h1{
+
+    margin:1rem 0 .5rem;
+
+    font-size:2.2rem;
+
+    font-weight:500;
+
+}
+
+.header p{
+
+    color:var(--muted);
+
+    margin:0;
+
+}
+
+.divider{
+
+    width:140px;
+
+    height:2px;
+
+    background:var(--primary);
+
+    margin:2rem auto 0;
+
+}
+
+/* CATEGORY BAR */
+
+.category-bar{
+
+    position:sticky;
+
+    top:0;
+
+    z-index:100;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:2rem;
+
+    overflow-x:auto;
+
+    padding:1rem;
+
+    background:var(--bg);
+
+    border-bottom:1px solid var(--border);
+
+    scrollbar-width:none;
+
+}
+
+.category-bar::-webkit-scrollbar{
+
+    display:none;
+
+}
+
+.category-btn{
+
+    background:none;
+
+    border:none;
+
+    color:var(--muted);
+
+    cursor:pointer;
+
+    padding:.4rem;
+
+    font-size:.95rem;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    transition:.2s;
+
+}
+
+.category-btn:hover{
+
+    color:var(--primary);
+
+}
+
+.category-btn.active{
+
+    color:var(--primary);
+
+    border-bottom:2px solid var(--primary);
+
+}
+
+/* MENU */
+
+.menu{
+
+    max-width:900px;
+
+    margin:auto;
+
+    padding:2rem 1rem;
+
+}
+
+.category{
+
+    margin-bottom:3rem;
+
+}
+
+.cat-title{
+
+    margin-bottom:1.5rem;
+
+    font-size:1.4rem;
+
+    letter-spacing:3px;
+
+    color:var(--primary);
+
+    border-left:4px solid var(--primary);
+
+    padding-left:.75rem;
+
+}
+
+/* CARD */
+
+.menu-card{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:1.25rem;
+
+    padding:1rem 0;
+
+    border-bottom:1px solid var(--border);
+
+    transition:.2s;
+
+}
+
+.menu-card:hover{
+
+    transform:translateX(4px);
+
+}
+
+.item-image{
+
+    width:80px;
+
+    height:80px;
+
+    object-fit:cover;
+
+    border-radius:12px;
+
+    flex-shrink:0;
+
+}
+
+.item-content{
+
+    flex:1;
+
+}
+
+.item-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:1rem;
+
+}
+
+.item-header h3{
+
+    margin:0;
+
+    font-size:1.2rem;
+
+    font-weight:600;
+
+}
+
+.item-content p{
+
+    margin:.5rem 0 0;
+
+    color:var(--muted);
+
+    line-height:1.6;
+
+    font-size:.95rem;
+
+}
+
+.price{
+
+    color:var(--primary);
+
+    font-size:1.1rem;
+
+    font-weight:bold;
+
+}
+
+/* FOOTER */
+
+.footer{
+
+    text-align:center;
+
+    padding:3rem 1rem;
+
+    border-top:1px solid var(--border);
+
+}
+
+.footer h3{
+
+    margin-top:0;
+
+    font-weight:500;
+
+}
+
+.footer p{
+
+    margin:.4rem 0;
+
+    color:var(--muted);
+
+}
+
+.footer a{
+
+    color:var(--primary);
+
+    text-decoration:none;
+
+}
+
+.footer a:hover{
+
+    text-decoration:underline;
+
+}
+
+/* MOBILE */
+
+@media(max-width:700px){
+
+    .category-bar{
+
+        justify-content:flex-start;
+
+        gap:1rem;
+
+    }
+
+    .menu-card{
+
+        align-items:flex-start;
+
+    }
+
+    .item-image{
+
+        width:70px;
+
+        height:70px;
+
+    }
+
+    .item-header{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:.25rem;
+
+    }
+
+}

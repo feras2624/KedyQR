@@ -67,6 +67,133 @@ const THEMES = [
         ]
 
     },
+    {
+
+        value: "fast_food",
+
+        label: "Fast Food",
+
+        palettes: [
+
+            {
+                value: "light",
+                label: "Light"
+            },
+
+            {
+                value: "dark",
+                label: "Dark"
+            }
+
+        ]
+
+    },
+
+    {
+
+        value: "catalog",
+
+        label: "Catalog",
+
+        palettes: [
+
+            {
+                value: "light",
+                label: "Light"
+            },
+
+            {
+                value: "dark",
+                label: "Dark"
+            }
+
+        ]
+
+    },
+    {
+
+        value: "neon",
+
+        label: "Neon",
+
+        palettes: [
+
+            {
+                value: "light",
+                label: "Light"
+            },
+
+            {
+                value: "dark",
+                label: "Dark"
+            }
+
+        ]
+
+    },
+    {
+
+        value: "japanese",
+
+        label: "Japanese",
+
+        palettes: [
+
+            {
+                value: "light",
+                label: "Light"
+            },
+
+            {
+                value: "dark",
+                label: "Dark"
+            }
+
+        ]
+
+    },
+    {
+
+        value: "newspaper",
+
+        label: "Newspaper",
+
+        palettes: [
+
+            {
+                value: "light",
+                label: "Light"
+            },
+
+            {
+                value: "dark",
+                label: "Dark"
+            }
+
+        ]
+
+    },
+    {
+
+        value: "luxury",
+
+        label: "Luxury",
+
+        palettes: [
+
+            {
+                value: "light",
+                label: "Light"
+            },
+
+            {
+                value: "dark",
+                label: "Dark"
+            }
+
+        ]
+
+    },
 
     {
 
