@@ -1,6 +1,6 @@
 import { updateSaveButton } from "./components/header.js";
 
-import { getCafeName } from "../router.js";
+import { getCafeName } from "./router.js";
 
 const DATA_URL = "https://raw.githubusercontent.com/feras2624/KedyQR-Data/refs/heads/main";
 
