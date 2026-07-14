@@ -33,7 +33,7 @@ export function getCafeName() {
     // return host.split(".")[0];
 
 
-        if (!project)
+        if (!cafe)
         throw new Error("No project selected.");
     return cafe;
 
