@@ -1,4 +1,4 @@
-export const DATA_URL = "https://raw.githubusercontent.com/feras2624/KedyQR-Data/main";
+export const DATA_URL = "https://raw.githubusercontent.com/feras2624/KedyQR-Data/refs/heads/main/";
 
 
 let state = {
