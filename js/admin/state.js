@@ -2,6 +2,7 @@ import { updateSaveButton } from "./components/header.js";
 
 import { getCafeName } from "../router.js";
 
+const DATA_URL = "https://raw.githubusercontent.com/feras2624/KedyQR-Data/main";
 
 export const state = {
     cafe: getCafeName(),
@@ -31,5 +32,5 @@ export function clearDirty() {
 }
 
 export function asset(path) {
-    return `cafes/${state.cafe}/${path}?v=${Date.now()}`;
+    return `${DATA_URL}/${state.cafe}/${path}?v=${Date.now()}`;
 }

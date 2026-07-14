@@ -4,10 +4,10 @@ import { closeSidebar } from "../sidebar.js";
 const pages = [
 
     ["dashboard", "🏠 Dashboard"],
-    ["restaurant", "🏪 Restaurant"],
-    ["categories", "📂 Categories"],
-    ["items", "🍔 Items"],
-    ["themes", "🎨 Theme"]
+    ["restaurant", "🏪 Cafe Bilgileri"],
+    ["categories", "📂 Kategoriler"],
+    ["items", "🍔 Ürünler"],
+    ["themes", "🎨 Tema"]
 
 ];
 

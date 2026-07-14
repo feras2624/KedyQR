@@ -1,3 +1,6 @@
+export const DATA_URL = "https://raw.githubusercontent.com/feras2624/KedyQR-Data/main";
+
+
 let state = {
     cafe: "",
     menu: null
@@ -20,5 +23,5 @@ export function getMenu() {
 }
 
 export function asset(path) {
-    return `cafes/${state.cafe}/${path}?v=${Date.now()}`;
+    return `${DATA_URL}/${state.cafe}/${path}?v=${Date.now()}`;
 }

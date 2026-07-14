@@ -23,11 +23,14 @@ export function Header() {
         <button id="save-btn">
             ✓ Saved
         </button>
+        <button class="danger" id="logout-btn">
+            Logout
+        </button>
 
     `;
 
     header.querySelector("#menu-btn").onclick = toggleSidebar;
-
+    header.querySelector("#logout-btn").onclick=logout;
     saveButton = header.querySelector("#save-btn");
     saveButton.onclick = save;
     return header;
@@ -50,3 +53,10 @@ export function updateSaveButton(dirty) {
     }
 
 }
+
+function logout(){
+        localStorage.removeItem("token");
+        localStorage.removeItem("project");
+
+        location.href = "login.html";
+    }

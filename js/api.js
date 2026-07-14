@@ -1,7 +1,10 @@
+import { DATA_URL } from "./state.js"
+
+
 export async function loadMenu(cafe) {
 
     const response =
-    await fetch(`cafes/${cafe}/menu.json?v=${Date.now()}`, {
+    await fetch(`${DATA_URL}/${cafe}/menu.json?v=${Date.now()}`, {
     cache: "no-store"
     });
 
