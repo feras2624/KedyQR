@@ -14,20 +14,28 @@ export function navigate(page) {
 
 export function getCafeName() {
 
-    const params = new URLSearchParams(location.search);
+    const cafe = localStorage.getItem("project");
 
-    if (params.has("cafe"))
-        return params.get("cafe");
 
-    const host = location.hostname;
+    // const params = new URLSearchParams(location.search);
 
-    if (
-        host === "localhost" ||
-        host === "127.0.0.1"
-    )
-        return "demo";
+    // if (params.has("cafe"))
+    //     return params.get("cafe");
 
-    return host.split(".")[0];
+    // const host = location.hostname;
+
+    // if (
+    //     host === "localhost" ||
+    //     host === "127.0.0.1"
+    // )
+    //     return "demo";
+
+    // return host.split(".")[0];
+
+
+        if (!project)
+        throw new Error("No project selected.");
+    return cafe;
 
 }
 
