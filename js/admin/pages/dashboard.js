@@ -1,18 +1,15 @@
-export function Dashboard() {
+import { QRCodePreview } from "../components/qr.js";
 
-    const div = document.createElement("div");
 
-    div.className = "page";
+export function Dashboard(){
 
-    div.innerHTML = `
+    const page = document.createElement("div");
+    const project = localStorage.getItem("project");
+    page.className = "page";
+    const qr = QRCodePreview(`https://${project}.kedyqr.com`);
+    page.append(qr.element);
 
-        <h1>Dashboard</h1>
-
-        <p>Welcome to KedyQR Admin.</p>
-
-    `;
-
-    return div;
+    return page;
 
 }
 

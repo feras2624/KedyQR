@@ -901,3 +901,31 @@ button:hover {
     opacity:.9;
 
 }
+
+
+
+.qr-preview{
+
+    margin-top:30px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+.qr-preview canvas{
+
+    background:white;
+
+    padding:15px;
+
+    border-radius:18px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+}
