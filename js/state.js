@@ -23,5 +23,5 @@ export function getMenu() {
 }
 
 export function asset(path) {
-    return `${DATA_URL}/${state.cafe}/${path}?v=${Date.now()}`;
+    return `${DATA_URL}/${state.cafe}/${path}`;
 }
