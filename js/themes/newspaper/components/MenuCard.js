@@ -14,19 +14,8 @@ export function MenuCard(item) {
 
                 <h3>${item.name}</h3>
 
-                <span class="price">
-
-                    ₺${item.price}
-
-                </span>
 
             </div>
-
-            <p class="description">
-
-                ${item.description}
-
-            </p>
 
             <button class="read-more">
 
